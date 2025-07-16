@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+	--font-heading: "Space Grotesk", "sans-serif";
+	--font-sans: "Inter", "sans-serif";
+	--color-primary: #181E2A;
+	--color-card: #212638;
+	--color-border: #262E47;
+	--color-accent: #48A9FA;
+	--color-purple: #A684F7;
+	--color-mint: #40DDB4;
+	--color-gold: #FFCF69;
+	--color-coral: #FF7096;
+	--color-main: #F5F7FA;
+	--color-secondary: #B4B7C7;
+	--color-muted: #8E91A7;
+}
+
+html {
+  	scroll-behavior: smooth;
+}
+
+@keyframes plusFade {
+	0%, 100% { opacity: 0.17; }
+	50% { opacity: 0.23; }
+}
+.plus-anim {
+  	animation: plusFade 6s ease-in-out infinite;
+}
+
+@keyframes scrollDot {
+  0% { opacity: 0.7; transform: translate(-50%, 0);}
+  60% { opacity: 0.25;}
+  90% { opacity: 0; transform: translate(-50%, 24px);}
+  100% { opacity: 0; transform: translate(-50%, 0);}
+}
+.animate-scroll-dot {
+  animation: scrollDot 1.35s cubic-bezier(.77,0,.18,1) infinite;
+}
+

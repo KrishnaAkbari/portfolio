@@ -31,8 +31,8 @@ export default function Contact() {
 	};
 	
 	return (
-		<section id="contact" className="scroll-mt-20 w-full min-h-screen flex flex-col items-center py-12 px-2 mt-24">
-			<h2 className="text-5xl font-heading font-bold text-accent mb-8 text-center">
+		<section id="contact" className="scroll-mt-20 w-full min-h-screen flex flex-col items-center py-12 xl:px-0 px-8 mt-24">
+			<h2 className="text-4xl sm:text-5xl font-heading font-bold text-accent mb-8 text-center">
 				Get In Touch
 			</h2>
 			<div className="text-main/80 text-base mb-10 text-center max-w-2xl leading-8">
@@ -56,7 +56,7 @@ export default function Contact() {
 							<MdEmail className="text-accent text-xl" />
 							<a
 								href="mailto:akbarikrishna1998@gmail.com"
-								className="text-accent hover:underline"
+								className="text-accent hover:underline break-all"
 							>
 								akbarikrishna1998@gmail.com
 							</a>

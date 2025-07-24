@@ -14,7 +14,7 @@ export default function Hero() {
     );
 
   return (
-    <section id="hero" className="relative flex flex-col justify-center items-center min-h-[100vh] bg-primary overflow-hidden">
+    <section id="home" className="relative flex flex-col justify-center items-center min-h-[100vh] bg-primary overflow-hidden">
         {dots.map((p, i) => (
             <span
                 key={i}
@@ -35,12 +35,12 @@ export default function Hero() {
                 .
             </span>
         ))}
-        <div className="relative z-10 flex flex-col items-center mt-10">
-            <div className="flex items-center text-3xl md:text-6xl font-heading font-semibold mb-2 text-text-main">
+        <div className="relative z-10 flex flex-col items-center lg:mt-14 mt-20 xl:px-0 px-8">
+            <div className="flex items-center text-5xl md:text-6xl font-heading font-semibold mb-2 text-text-main">
                 <span>Hello</span>
                 <span className="ml-2 text-5xl">👋</span>
             </div>
-            <h1 className="text-center text-3xl md:text-5xl font-heading font-bold text-text-main mb-2 mt-2">
+            <h1 className="text-center text-4xl md:text-5xl font-heading font-bold text-text-main mb-2 mt-2">
                 I’m <span className="text-accent">Krishna,</span> a 
                 <Typewriter
                     words={[' Frontend Developer']}
@@ -52,7 +52,7 @@ export default function Hero() {
                     delaySpeed={3000}
                 />
             </h1>
-            <p className="text-center text-lg md:text-2xl text-secondary font-sans mt-3 max-w-2xl">
+            <p className="text-center text-xl md:text-2xl text-secondary font-sans mt-3 max-w-2xl">
                 I design and build modern, responsive web interfaces that feel as good as they look.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
@@ -72,7 +72,7 @@ export default function Hero() {
                 </a>
             </div>
         </div>
-        <div className="relative flex flex-col items-center mt-24">
+        <div className="relative sm:flex hidden flex-col items-center mt-24">
             <div className="w-8 h-14 rounded-full border-2 border-accent/80 flex justify-center items-start">
                 <span className="absolute left-[62%] top-3 -translate-x-1/2 w-2 h-2 rounded-full bg-accent/80 animate-scroll-dot" />
             </div>

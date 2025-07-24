@@ -8,12 +8,18 @@ export default function BlogSection() {
             image: "/images/blog/rbac-vue3.png",
             url: "https://blog.krishna.codeistari.com/role-based-access-control-rbac-in-vue-3-a-complete-guide",
         },
+        {
+            title: "Custom Fonts and Colors in Tailwind CSS v4",
+            desc: "Learn how to add your own fonts and color palette in Tailwind CSS v4 with the new configuration and simplicity. Make your branding shine with custom styles!",
+            image: "/images/blog/tailwind-fonts-colors.png",
+            url: "https://blog.krishna.codeistari.com/custom-fonts-and-colors-in-tailwind-css-v4",
+        },
     ];
 
     return (
         <>
-            <div id="blog" className="scroll-mt-20 relative flex flex-col items-center justify-center min-h-[180px] mb-8 mt-28">
-                <span className="absolute text-[90px] sm:text-[150px] font-heading font-extrabold text-white opacity-10 blur-[6px] select-none tracking-tight z-0">
+            <div id="blog" className="scroll-mt-20 relative flex flex-col items-center justify-center min-h-[180px] md:mb-8 mb-2 md:mt-28 mt-8">
+                <span className="absolute md:block hidden text-[90px] xl:text-[150px] font-heading font-extrabold text-white opacity-10 blur-[6px] select-none tracking-tight z-0">
                     BLOGS
                 </span>
 
@@ -22,12 +28,12 @@ export default function BlogSection() {
                         Blogs
                     </h2>
                     <div className="h-1 w-16 bg-accent rounded-full mb-4" />
-                    <span className="text-secondary tracking-wide text-base sm:text-lg">
+                    <span className="text-secondary tracking-wide text-base sm:text-lg sm:px-0 px-5 text-center">
                         My Thoughts on Frontend Development
                     </span>
                 </div>
             </div>
-            <section className="w-full py-12 px-2 bg-[#c5c9cd] dark:bg-primary flex flex-col items-center">
+            <section className="w-full py-12 xl:px-0 px-8 bg-[#c5c9cd] dark:bg-primary flex flex-col items-center">
                 <div className="w-full flex justify-center">
                     <div className="flex flex-wrap justify-center gap-8 transition-all duration-300">
                         {blogs.map((blog, i) => (

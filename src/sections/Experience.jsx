@@ -32,8 +32,8 @@ const experiences = [
 export default function Experience() {
     return (
         <section id="experience" className="scroll-mt-20">
-            <div className="relative flex flex-col items-center justify-center min-h-[180px] mb-8 mt-28">
-                <span className="absolute text-[90px] sm:text-[150px] font-heading font-extrabold text-white opacity-10 blur-[6px] select-none tracking-tight z-0">
+            <div className="relative flex flex-col items-center justify-center min-h-[180px] md:mb-8 mb-2 md:mt-28 mt-8">
+                <span className="absolute md:block hidden text-[90px] xl:text-[150px] font-heading font-extrabold text-white opacity-10 blur-[6px] select-none tracking-tight z-0">
                     EXPERIENCE
                 </span>
 
@@ -48,29 +48,28 @@ export default function Experience() {
                 </div>
             </div>
             <div
-                className="w-full flex flex-col items-center gap-8 py-12 bg-primary transition-all duration-300"
+                className="w-full flex flex-col items-center gap-8 py-12 bg-primary transition-all duration-300 xl:px-0 px-8"
             >
                 {experiences.map((exp, idx) => (
                     <div
                         key={idx}
                         className="relative w-full max-w-5xl bg-card rounded-2xl border border-border hover:border-accent/20 px-8 py-7 shadow flex flex-col"
                     >
-                        <span className="absolute top-5 right-8 text-secondary text-sm select-none">
-                            {exp.date}
-                        </span>
-                        <div className="flex items-start gap-4 mb-2">
-                            <div className={`w-10 h-10 flex items-center justify-center rounded-full ${exp.iconBg}`} >
-                                <MdWorkOutline className={`text-2xl ${exp.iconColor}`} />
-                            </div>
-                            <div>
-                                <h3 className="font-heading text-xl text-text-main font-bold">
-                                    {exp.title}
-                                </h3>
-                                <div className="text-secondary font-sans text-lg leading-8">
-                                    {exp.company}
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                            <div className="flex sm:flex-row flex-col items-start gap-4">
+                                <div className={`md:w-10 w-8 md:h-10 h-8 flex items-center justify-center rounded-full ${exp.iconBg}`}>
+                                    <MdWorkOutline className={`text-xl md:text-2xl ${exp.iconColor}`} />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="font-heading text-xl text-text-main font-bold">{exp.title}</h3>
+                                    <div className="text-secondary font-sans text-lg leading-8">{exp.company}</div>
                                 </div>
                             </div>
+                            <span className="text-secondary text-sm select-none sm:mt-0 mt-2">
+                                {exp.date}
+                            </span>
                         </div>
+
                         {exp.description && (
                             <p className="text-secondary font-sans mt-2 mb-4 text-base">
                                 {exp.description}

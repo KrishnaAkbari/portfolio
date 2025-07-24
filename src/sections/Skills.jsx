@@ -54,8 +54,8 @@ const skills = [
 export default function Skills() {
 	return (
 		<>
-			<div id="skills" className="scroll-mt-20 relative flex flex-col items-center justify-center min-h-[180px] mb-8 mt-28">
-                <span className="absolute text-[90px] sm:text-[150px] font-heading font-extrabold text-white opacity-10 blur-[6px] select-none tracking-tight z-0">
+			<div id="skills" className="scroll-mt-20 relative flex flex-col items-center justify-center min-h-[180px] md:mb-8 mb-2 md:mt-20 mt-17">
+                <span className="absolute md:block hidden text-[90px] xl:text-[150px] font-heading font-extrabold text-white opacity-10 blur-[6px] select-none tracking-tight z-0">
                     SKILLS
                 </span>
 
@@ -70,7 +70,7 @@ export default function Skills() {
                 </div>
             </div>
 			<section
-				className="w-full min-h-[60vh] flex justify-center items-center py-12"
+				className="w-full min-h-[60vh] flex justify-center items-center py-12 xl:px-0 px-8"
 			>
 				<div className="w-full max-w-5xl bg-card rounded-3xl shadow-xl border border-border px-6 sm:px-10 py-10">
 					<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-6 md:gap-x-8 gap-y-10">
